@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SubscriptionsView: View {
     
+    @State private var showingOnBoarding: Bool = true
+    
+    
     @State private var opacity: Double = 1
     
     @State private var showingSheet: Bool = false
@@ -82,6 +85,9 @@ struct SubscriptionsView: View {
             .searchable(text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=$text@*/.constant("")/*@END_MENU_TOKEN@*/, placement: /*@START_MENU_TOKEN@*/.automatic/*@END_MENU_TOKEN@*/)
             
         } //NavigationView
+        .sheet(isPresented: $showingOnBoarding) {
+            OnBoardingView(showingOnBoarding: $showingOnBoarding)
+        }
     }
     
 }
