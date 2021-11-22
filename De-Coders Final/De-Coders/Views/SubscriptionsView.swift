@@ -10,8 +10,7 @@ import SwiftUI
 struct SubscriptionsView: View {
     
     @State private var showingOnBoarding: Bool = true
-    
-    
+
     @State private var opacity: Double = 1
     
     @State private var showingSheet: Bool = false
@@ -54,12 +53,20 @@ struct SubscriptionsView: View {
                         
                         
                     } //Form
-                    
-                    
+                    VStack {
+                        
+                    Image("Subscriptions")
+                            .resizable()
+                            .frame(width: 260, height: 260)
+                        
+                        
+                        
                     Text("Tap the plus button to add a subscription")
                     
-                        .foregroundColor(.secondary).opacity(opacity)
-                    
+                        .foregroundColor(.secondary)
+                 
+                    }
+                    .opacity(opacity)
                 }
                 
                 

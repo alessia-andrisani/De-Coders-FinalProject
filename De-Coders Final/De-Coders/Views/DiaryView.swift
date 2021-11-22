@@ -37,9 +37,15 @@ struct DiaryView: View {
                         
                         
                     }
-                    Text("Tap the plus button to add an expense")
+                    VStack {
+                        Image("Diary")
+                            .resizable()
+                            .frame(width: 260, height: 260)
+                        Text("Tap the plus button to add an expense")
                         .foregroundColor(.secondary)
-                        .opacity(opacity)
+                        
+                    }
+                    .opacity(opacity)
                 }
                 .navigationTitle("Diary")
                 .navigationBarItems( trailing: Button(action: {
