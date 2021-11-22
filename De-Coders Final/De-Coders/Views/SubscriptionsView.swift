@@ -77,7 +77,8 @@ struct SubscriptionsView: View {
                     
                 })
                                      { Image(systemName: "plus")
-                        .font(Font.system(.title))
+                        .font(Font.system(.headline))
+          
                     
                 }) .sheet(isPresented: $showingSheet) {
                     AddSubscriptionView(showingSheet: $showingSheet, opacity: $opacity)

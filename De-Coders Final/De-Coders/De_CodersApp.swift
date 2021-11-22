@@ -26,7 +26,7 @@ struct De_CodersApp: App {
                     Image(systemName: "rectangle.and.pencil.and.ellipsis")
                     Text("Diary") } .tag("Diary")
                 SummaryView().environmentObject(subscription).environmentObject(diaryElement).tabItem {
-                    Image(systemName: "eurosign.circle")
+                    Image(systemName: "cart")
                    Text("Summary") } .tag("Summary")
             }
         }

@@ -52,7 +52,7 @@ struct DiaryView: View {
                     showingSheetDiary.toggle()
                     
                 }) { Image(systemName: "plus")
-                        .font(Font.system(.title))
+                        .font(Font.system(.headline))
                     
                 })
                 .sheet(isPresented: $showingSheetDiary){

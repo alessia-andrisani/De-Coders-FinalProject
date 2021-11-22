@@ -35,9 +35,9 @@ struct OnBoardingView: View {
                             .font(.system(size: 18))
                             .font(.title)
                             .fontWeight(.bold)
-                            .padding(.leading, -140)
+                            .padding(.leading, -145)
                         
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.")
+                        Text("Write down your subscriptions  selecting a category, writing a price and a renewal date.")
                             .padding([.leading, .bottom, .trailing])
                             .font(.system(size: 18))
                             .foregroundColor(.secondary)
@@ -58,7 +58,7 @@ struct OnBoardingView: View {
                             .fontWeight(.bold)
                             .padding(.leading, -140)
                         
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.")
+                        Text("Keep track of your daily expenses  in the diary, writing a price and selecting a date.")
                             .padding([.leading, .bottom, .trailing])
                             .font(.system(size: 18))
                             .foregroundColor(.secondary)
@@ -76,9 +76,9 @@ struct OnBoardingView: View {
                             .font(.system(size: 18))
                             .font(.title)
                             .fontWeight(.bold)
-                            .padding(.leading, -140)
+                            .padding(.leading, -145)
                         
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.")
+                        Text("Monitor your exits through a summary of your subscriptions and expenses.")
                             .padding([.leading, .bottom, .trailing])
                             .font(.system(size: 18))
                             .foregroundColor(.secondary)
