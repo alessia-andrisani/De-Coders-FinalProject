@@ -23,7 +23,7 @@ struct De_CodersApp: App {
                     Image(systemName: "list.bullet")
                     Text("Subscriptions") } .tag("Subscriptions")
                 DiaryView().environmentObject(diaryElement).tabItem {
-                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                    Image(systemName: "note.text")
                     Text("Diary") } .tag("Diary")
                 SummaryView().environmentObject(subscription).environmentObject(diaryElement).tabItem {
                     Image(systemName: "cart")
