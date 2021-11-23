@@ -78,7 +78,7 @@ struct OnBoardingView: View {
                             .fontWeight(.bold)
                             .padding(.leading, -145)
                         
-                        Text("Monitor your exits through a summary of your subscriptions and expenses.")
+                        Text("Monitor your outflows through a summary of your subscriptions and expenses.")
                             .padding([.leading, .bottom, .trailing])
                             .font(.system(size: 18))
                             .foregroundColor(.secondary)
