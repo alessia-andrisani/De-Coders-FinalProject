@@ -33,7 +33,7 @@
 		5047FD1A274553FB0082C7C6 /* SubscriptionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailsView.swift; sourceTree = "<group>"; };
 		5047FD1C274554100082C7C6 /* DiaryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailsView.swift; sourceTree = "<group>"; };
 		5047FD1E27455E340082C7C6 /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStore.swift; sourceTree = "<group>"; };
-		5056F7F6274294FC0023F9EB /* De-Coders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "De-Coders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5056F7F6274294FC0023F9EB /* Moneying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moneying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5056F7F9274294FC0023F9EB /* De_CodersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_CodersApp.swift; sourceTree = "<group>"; };
 		5056F7FD274294FE0023F9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5056F800274294FE0023F9EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		5056F7F7274294FC0023F9EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5056F7F6274294FC0023F9EB /* De-Coders.app */,
+				5056F7F6274294FC0023F9EB /* Moneying.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			);
 			name = "De-Coders";
 			productName = "De-Coders";
-			productReference = 5056F7F6274294FC0023F9EB /* De-Coders.app */;
+			productReference = 5056F7F6274294FC0023F9EB /* Moneying.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -358,8 +358,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-2andrisani.alessia.De-Coders";
-				PRODUCT_NAME = "De-Coders";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-2andrisani.alessia.Moneying";
+				PRODUCT_NAME = Moneying;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,8 +387,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-2andrisani.alessia.De-Coders";
-				PRODUCT_NAME = "De-Coders";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-2andrisani.alessia.Moneying";
+				PRODUCT_NAME = Moneying;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
