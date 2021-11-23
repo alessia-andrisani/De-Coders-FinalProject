@@ -10,7 +10,7 @@ import SwiftUI
 struct SubscriptionsView: View {
     
     @State private var showingOnBoarding: Bool = true
-
+    
     @State private var opacity: Double = 1
     
     @State private var showingSheet: Bool = false
@@ -43,28 +43,24 @@ struct SubscriptionsView: View {
                                         }
                                     }
                                 }
+                                .onDelete(perform: delete)
                             }
                         }
-                        //                header: {
-                        //
-                        //                    Text("Music").foregroundColor(.black).bold()
-                        //
-                        //                }
                         
                         
                     } //Form
                     VStack {
                         
-                    Image("Subscriptions")
+                        Image("Subscriptions")
                             .resizable()
                             .frame(width: 260, height: 260)
                         
                         
                         
-                    Text("Tap the plus button to add a subscription")
-                    
-                        .foregroundColor(.secondary)
-                 
+                        Text("Tap the plus button to add a subscription")
+                        
+                            .foregroundColor(.secondary)
+                        
                     }
                     .opacity(opacity)
                 }
@@ -78,7 +74,7 @@ struct SubscriptionsView: View {
                 })
                                      { Image(systemName: "plus")
                         .font(Font.system(.headline))
-          
+                    
                     
                 }) .sheet(isPresented: $showingSheet) {
                     AddSubscriptionView(showingSheet: $showingSheet, opacity: $opacity)
@@ -97,7 +93,14 @@ struct SubscriptionsView: View {
             OnBoardingView(showingOnBoarding: $showingOnBoarding)
         }
     }
+    //Per eliminare gli elementi dalla lista
     
+    func delete(at offsets: IndexSet) {
+        withAnimation {offsets.map {
+            subscription.subscriptions.remove(at: $0)
+          }
+        }
+    }
 }
 
 

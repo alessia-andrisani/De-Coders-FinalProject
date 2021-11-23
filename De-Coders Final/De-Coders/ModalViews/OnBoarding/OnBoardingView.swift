@@ -37,7 +37,7 @@ struct OnBoardingView: View {
                             .fontWeight(.bold)
                             .padding(.leading, -145)
                         
-                        Text("Write down your subscriptions  selecting a category, writing a price and a renewal date.")
+                        Text("Keep track of your subscriptions selecting a category, writing a price and a renewal date.")
                             .padding([.leading, .bottom, .trailing])
                             .font(.system(size: 18))
                             .foregroundColor(.secondary)
@@ -58,7 +58,7 @@ struct OnBoardingView: View {
                             .fontWeight(.bold)
                             .padding(.leading, -140)
                         
-                        Text("Keep track of your daily expenses  in the diary, writing a price and selecting a date.")
+                        Text("Write down your daily expenses  in the diary, writing a price and selecting a date.")
                             .padding([.leading, .bottom, .trailing])
                             .font(.system(size: 18))
                             .foregroundColor(.secondary)

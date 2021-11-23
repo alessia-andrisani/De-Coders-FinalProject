@@ -51,63 +51,69 @@ struct SummaryView: View {
         
         NavigationView {
             
-            
-            Form {
-                Section {
-                    Picker("Select time frame", selection: $referenceFrame) {
-                        ForEach (timeframes, id: \.self) {
-                            Text($0)
-                        }
+            VStack {
+                
+                
+                Picker("Select time frame", selection: $referenceFrame) {
+                    ForEach (timeframes, id: \.self) {
+                        Text($0)
                         
                     }
-                    .pickerStyle(.segmented)
                 }
+                .pickerStyle(.segmented)
+                .background(Color(red:242/255, green: 242/255, blue: 247/255))
+                .padding(.leading)
+                .padding(.trailing)
                 
-                Section {
-                    ForEach (subscription.subscriptions) {
-                        subscription in
-                        HStack {
-                            Text("\(subscription.name)")
-                            Spacer()
-                            Text(subscription.cost.doubleInCurrencyString)
-                            
+                
+                Form {
+                    
+                    Section {
+                        ForEach (subscription.subscriptions) {
+                            subscription in
+                            HStack {
+                                Text("\(subscription.name)")
+                                Spacer()
+                                Text(subscription.cost.doubleInCurrencyString)
+                                
+                            }
+                        }
+                        ForEach (diaryElement.diaryElements) {
+                            diaryElement in
+                            HStack {
+                                Text("\(diaryElement.name)")
+                                Spacer()
+                                Text(diaryElement.cost.doubleInCurrencyString)
+                                
+                            }
                         }
                     }
-                    ForEach (diaryElement.diaryElements) {
-                        diaryElement in
-                        HStack {
-                            Text("\(diaryElement.name)")
-                            Spacer()
-                            Text(diaryElement.cost.doubleInCurrencyString)
-                            
-                        }
+                    
+                    Section {
+                        
+                        Text(sommaTotale.doubleInCurrencyString)
+                            .font(.largeTitle)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .padding()
+                        
+                        
+                        
+                        
+                        
+                    } header: {
+                        Text("Total Expenses")
+                            .font(.subheadline).fontWeight(.bold)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .padding()
+                        
                     }
-                }
-                
-                Section {
-                    
-                    Text(sommaTotale.doubleInCurrencyString)
-                        .font(.largeTitle)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .padding()
                     
                     
                     
-                    
-                    
-                } header: {
-                    Text("Total Expenses")
-                        .font(.subheadline).fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .padding()
-                    
-                }
-                
-                
-                
-            } //Form
-            .navigationBarTitle("Summary")
-            
+                } //Form
+                .navigationBarTitle("Summary")
+            }
+            .background(Color(red:242/255, green: 242/255, blue: 247/255))
             
         } //NavigationView
         

@@ -32,6 +32,7 @@ struct DiaryView: View {
                                     }
                                 }
                             }
+                            .onDelete(perform: delete)
                             
                         }
                         
@@ -64,6 +65,15 @@ struct DiaryView: View {
             
         } //NavigationView
     } //Body
+    
+    //Per eliminare gli elementi dalla lista
+    
+    func delete(at offsets: IndexSet) {
+        withAnimation {offsets.map {
+            diaryElement.diaryElements.remove(at: $0)
+          }
+        }
+    }
 }
 
 
