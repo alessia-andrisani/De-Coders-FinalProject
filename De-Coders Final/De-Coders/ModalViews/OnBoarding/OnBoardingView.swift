@@ -16,7 +16,7 @@ struct OnBoardingView: View {
                 Text("")
                     .navigationBarTitle(Text(""), displayMode: .inline)
                 
-                Text("Welcome on \n Mooney")
+                Text("Welcome on \n Moneying")
                     .font(.system(size: 38))
                     .font(.title)
                     .fontWeight(.bold)
