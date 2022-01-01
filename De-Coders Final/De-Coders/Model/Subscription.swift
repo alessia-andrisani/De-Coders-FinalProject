@@ -21,20 +21,6 @@ struct Subscription: Identifiable {
 }
 
 
-//Extension per formattare in stringa, formato currency, il costo della subscription e del diary
-
-extension Double {
-    
-    var doubleInCurrencyString: String {
-        
-        let doubleFormatter = NumberFormatter()
-        doubleFormatter.locale = Locale.current
-        doubleFormatter.numberStyle = .currency
-        return doubleFormatter.string(from: self as NSNumber) ?? ""
-        
-    }
- 
-}
 
 
 

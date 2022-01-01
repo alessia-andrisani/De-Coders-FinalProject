@@ -22,6 +22,7 @@
 		5098C52A2743BF0100C14036 /* AddSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098C5292743BF0100C14036 /* AddSubscriptionView.swift */; };
 		5098C52D2743D46700C14036 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098C52C2743D46700C14036 /* AddExpenseView.swift */; };
 		50ACBD26274BA84000169AF3 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACBD25274BA84000169AF3 /* OnBoardingView.swift */; };
+		50C56C012780BA9F00E74751 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C56C002780BA9F00E74751 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		5098C5292743BF0100C14036 /* AddSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionView.swift; sourceTree = "<group>"; };
 		5098C52C2743D46700C14036 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		50ACBD25274BA84000169AF3 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		50C56C002780BA9F00E74751 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5056F7F9274294FC0023F9EB /* De_CodersApp.swift */,
+				50C56C002780BA9F00E74751 /* Extensions.swift */,
 				5047FD11274543460082C7C6 /* Model */,
 				5056F80D274295650023F9EB /* Views */,
 				5098C52B2743BF2100C14036 /* ModalViews */,
@@ -215,6 +218,7 @@
 				5047FD1F27455E340082C7C6 /* SubscriptionStore.swift in Sources */,
 				5098C52A2743BF0100C14036 /* AddSubscriptionView.swift in Sources */,
 				50ACBD26274BA84000169AF3 /* OnBoardingView.swift in Sources */,
+				50C56C012780BA9F00E74751 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
