@@ -96,10 +96,7 @@ struct SubscriptionsView: View {
     //Per eliminare gli elementi dalla lista
     
     func delete(at offsets: IndexSet) {
-        withAnimation {offsets.map {
-            subscription.subscriptions.remove(at: $0)
-          }
-        }
+        subscription.subscriptions.remove(atOffsets: offsets)
     }
 }
 

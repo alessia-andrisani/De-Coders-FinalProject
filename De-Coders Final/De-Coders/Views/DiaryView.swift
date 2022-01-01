@@ -68,11 +68,9 @@ struct DiaryView: View {
     
     //Per eliminare gli elementi dalla lista
     
-    func delete(at offsets: IndexSet) {
-        withAnimation {offsets.map {
-            diaryElement.diaryElements.remove(at: $0)
-          }
-        }
+  
+        func delete(at offsets: IndexSet) {
+            diaryElement.diaryElements.remove(atOffsets: offsets)
     }
 }
 
