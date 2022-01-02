@@ -102,8 +102,7 @@ struct AddSubscriptionView: View {
                     //Aggiunge l'elemento dell'utente all'array subscriptions
                     subscription.subscriptions.append(subDaInserire)
                     
-                    //Fa scomparire testo tap sul plus...
-                    opacity = 0
+                    
                 }) {
                     Text("Done").bold()
                     
@@ -148,8 +147,8 @@ struct AddSubscriptionView: View {
 
 
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        SubscriptionsView().environmentObject(SubscriptionStore())
-    }
-}
+//struct SwiftUIView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SubscriptionsView().environmentObject(SubscriptionStore())
+//    }
+//}

@@ -10,8 +10,22 @@ import SwiftUI
 
 class DiaryStore: ObservableObject {
     
-    @Published var diaryElements: [DiaryElement] = []
-    
+    @Published var diaryElements: [DiaryElement] = [] {
+        didSet {
+            
+            if let encoded = try? JSONEncoder().encode(diaryElements) {
+                UserDefaults.standard.set(encoded, forKey: "DiaryElements")
+            }
+        }
+    }
+    init() {
+        if let savedDiryElements = UserDefaults.standard.data(forKey: "DiaryElements") {
+            if let decodedDiaryElements = try? JSONDecoder().decode([DiaryElement].self, from: savedDiryElements) {
+                diaryElements = decodedDiaryElements
+            }
+        }
+        diaryElements = []
+    }
     
 }
 

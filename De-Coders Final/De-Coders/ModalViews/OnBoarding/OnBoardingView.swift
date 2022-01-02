@@ -10,6 +10,7 @@ import SwiftUI
 struct OnBoardingView: View {
     @Binding var showingOnBoarding: Bool
     
+
     var body: some View {
         NavigationView {
             VStack{
@@ -89,6 +90,7 @@ struct OnBoardingView: View {
                 
                 Button(action: {
                     showingOnBoarding = false
+                    
                     
                 }) {
                     ZStack{

@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct DiaryElement: Identifiable {
-    let id = UUID()
+struct DiaryElement: Identifiable, Codable {
+    var id = UUID()
     var name: String
     var cost: Double
     var notes: String

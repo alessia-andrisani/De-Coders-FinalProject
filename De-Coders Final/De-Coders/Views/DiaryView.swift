@@ -46,7 +46,7 @@ struct DiaryView: View {
                         .foregroundColor(.secondary)
                         
                     }
-                    .opacity(opacity)
+                    .opacity(diaryElement.diaryElements.count == 0 ? 1 : 0 )
                 }
                 .navigationTitle("Diary")
                 .navigationBarItems( trailing: Button(action: {

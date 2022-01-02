@@ -12,7 +12,24 @@ import SwiftUI
 
 class SubscriptionStore: ObservableObject {
     
-    @Published var subscriptions: [Subscription] = []
+    @Published var subscriptions: [Subscription] = [] {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(subscriptions) {
+                UserDefaults.standard.set(encoded, forKey: "Subscriptions")
+            }
+            
+        }
+    }
+    
+    init() {
+        if let savedSubscriptions = UserDefaults.standard.data(forKey: "Subscriptions") {
+            if let decodedSubscriptions = try? JSONDecoder().decode([Subscription].self, from: savedSubscriptions) {
+                subscriptions = decodedSubscriptions
+                return
+            }
+        }
+        subscriptions = []
+    }
     
 }
 

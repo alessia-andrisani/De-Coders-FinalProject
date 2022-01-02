@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 
-struct Subscription: Identifiable {
+struct Subscription: Identifiable, Codable {
     
-    let id = UUID()
+    var id = UUID()
     var category: String
     var name: String
     var cost: Double

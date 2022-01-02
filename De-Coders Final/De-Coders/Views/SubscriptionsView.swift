@@ -9,13 +9,19 @@ import SwiftUI
 
 struct SubscriptionsView: View {
     
-    @State private var showingOnBoarding: Bool = true
+    @AppStorage("ShowingOnBoarding") private var showingOnBoarding: Bool = true
+    
+
     
     @State private var opacity: Double = 1
     
     @State private var showingSheet: Bool = false
     
     @EnvironmentObject var subscription: SubscriptionStore
+    
+    
+    
+
     
     
     
@@ -62,7 +68,7 @@ struct SubscriptionsView: View {
                             .foregroundColor(.secondary)
                         
                     }
-                    .opacity(opacity)
+                    .opacity(subscription.subscriptions.count == 0 ? 1: 0)
                 }
                 
                 
@@ -85,7 +91,10 @@ struct SubscriptionsView: View {
                 
                 
             } //VStack
-            
+           
+
+
+           
             .searchable(text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=$text@*/.constant("")/*@END_MENU_TOKEN@*/, placement: /*@START_MENU_TOKEN@*/.automatic/*@END_MENU_TOKEN@*/)
             
         } //NavigationView

@@ -68,7 +68,7 @@ struct AddExpenseView: View {
                     let elementoDaInserire: DiaryElement = DiaryElement(name: diaryName , cost: diaryCost, notes: diaryNotes, date: newDate)
                     //Aggiunge l'elemento da inserire all'array diaryElements
                     diaryElement.diaryElements.append(elementoDaInserire)
-                       opacity = 0
+                       
                    
                 } label: {
                     Text("Done").bold()
