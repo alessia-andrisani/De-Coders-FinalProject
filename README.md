@@ -1,5 +1,5 @@
 # De-Coders-FinalProject
 
-Created at Apple Developer Academy Napoli
 
-An app to keep track of expenses and subscriptions. 
+`Moneying` is a simple app to keep track of expenses and subscriptions. 
+It has been developed in `SwiftUI` for iPhone. 
