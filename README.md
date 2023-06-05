@@ -1,5 +1,8 @@
 # Moneying
 
+[![](https://img.shields.io/badge/iOS-15.0-orange)](#)
+[![](https://img.shields.io/badge/Platforms-iPhone-blue)](#)
+[![](https://img.shields.io/badge/Category-Productivity-brightgreen)](#)
 
 `Moneying` is a simple app to keep track of expenses and subscriptions. 
 It has been developed in `SwiftUI` for iPhone and targets `iOS 15` or higher. 
